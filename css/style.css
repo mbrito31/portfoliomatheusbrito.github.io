@@ -42,6 +42,14 @@ ul {
   list-style: none;
 }
 
+.hiddensection {
+  display: none;
+}
+
+.main-section.nav-open {
+  display: none;
+}
+
 .section {
   background: var(--bg-black-900);
   min-height: 100vh;
@@ -989,6 +997,10 @@ color: var(--text-black-900);
     max-width: calc(100% - 20px);
   }
 
+  .home-info {
+    padding-top: 150px;
+  }
+
   .section-title h2 {
     font-size: 30px;
   }
@@ -1032,4 +1044,61 @@ color: var(--text-black-900);
     font-size: 25px;
   }
 }
+
+
+/* Adicione estas regras de estilo no final do seu arquivo CSS */
+
+@media screen and (max-width: 389px) {
+  /* Estilos para telas com largura até 389 pixels */
+  .main-container {    
+    flex-direction: column; /* Altera a direção do layout para empilhado */
+  }
+
+  .home-info {
+    padding-top: 150px;
+  }
+
+  .section-title {
+    padding-top: 50px;
+  }  
+
+  .nav {
+    flex-direction: column; /* Altera a direção do menu para empilhado */
+  }
+
+  .nav li {
+    width: 100%; /* Define a largura dos itens do menu para 100% da largura da tela */
+  }
+
+  .nav-toggler {
+    display: none; /* Oculta o botão do menu */
+  }
+
+  .main-content {
+    width: 100%; /* Define a largura do conteúdo principal para 100% da largura da tela */
+  }
+
+  .profession {
+    font-size: 20px;
+    margin: 40px 0;
+  }
+
+  .home .container,
+  .about .container,
+  .service .container,
+  .portfolio .container,
+  .contact .container {
+    padding: 15px; /* Adiciona preenchimento interno ao container para melhorar a legibilidade */
+  }
+
+  .about .row-infos {
+    display: none;
+  }
+
+  .about .row-infos p {
+    width: 100%;
+  }
+  
+}
+
 
