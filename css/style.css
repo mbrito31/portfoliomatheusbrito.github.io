@@ -1101,4 +1101,156 @@ color: var(--text-black-900);
   
 }
 
+@media (max-width: 360px) {
+  .section {
+    padding: 10px 0;
+  }
+  
+  .nav-toggler {
+    display: flex;
+  }
+  
+  .aside {
+    left: -270px;
+  }
+  
+  .aside.open {
+    left: 0;
+  }
+  
+  .section {
+    left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+  
+  .home-info, .home-image {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .home-info {
+    margin-top: 10px;
+  }
+  
+  .hello {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+  
+  .hello span {
+    font-size: 24px;
+  }
+  
+  .profession {
+    font-size: 24px;
+    margin: 40px 0;
+  }
+  
+  .home-info p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .home-info .btn {
+    margin-right: 10px;
+  }
+  
+  .home-image img {
+    height: 300px;
+    width: 90%;
+  }
+  
+  .about-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .about-title-h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.2; /* Ajuste da altura da linha para evitar sobreposição */
+    text-align: center;
+  }
+
+  .about-title-h3 span {
+    display: block;
+    margin-top: 5px; 
+  }
+  
+  .about-text h3 span {
+    font-size: 22px;
+  }
+  
+  .about-text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .personal-info .info-item {
+    margin-bottom: 8px;
+  }
+  
+  .personal-info .info-item span,
+  .personal-info .info-item p {
+    font-size: 14px;
+  }
+  
+  .resume {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+  
+  .resume .row .title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .resume .row .timeline {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .row .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal quando necessário */
+    max-width: calc(100% - 30px);
+  }
+  
+  .row .timeline .timeline-item {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .row .timeline .timeline-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .row .timeline .timeline-item h3 span {
+    font-size: 12px;
+  }
+  
+  .row .timeline .timeline-item p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .skills .skill-item h5 {
+    font-size: 14px;
+  }
+  
+  .skills .progress {
+    height: 4px;
+  }
+}
+
 
