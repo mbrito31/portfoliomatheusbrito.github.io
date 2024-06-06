@@ -963,7 +963,7 @@ color: var(--text-black-900);
     }
   
     .home-image::after, .home-image::before {
-      display: none; /* Remove os pseudo-elementos que adicionam as linhas */
+      display: none; 
     } 
   
   .about-content,
@@ -1046,12 +1046,12 @@ color: var(--text-black-900);
 }
 
 
-/* Adicione estas regras de estilo no final do seu arquivo CSS */
+
 
 @media screen and (max-width: 389px) {
-  /* Estilos para telas com largura até 389 pixels */
+  
   .main-container {    
-    flex-direction: column; /* Altera a direção do layout para empilhado */
+    flex-direction: column; 
   }
 
   .home-info {
@@ -1063,19 +1063,18 @@ color: var(--text-black-900);
   }  
 
   .nav {
-    flex-direction: column; /* Altera a direção do menu para empilhado */
+    flex-direction: column; 
   }
 
   .nav li {
-    width: 100%; /* Define a largura dos itens do menu para 100% da largura da tela */
+    width: 100%; 
   }
-
   .nav-toggler {
-    display: none; /* Oculta o botão do menu */
+    display: none; 
   }
 
   .main-content {
-    width: 100%; /* Define a largura do conteúdo principal para 100% da largura da tela */
+    width: 100%;
   }
 
   .profession {
@@ -1088,7 +1087,7 @@ color: var(--text-black-900);
   .service .container,
   .portfolio .container,
   .contact .container {
-    padding: 15px; /* Adiciona preenchimento interno ao container para melhorar a legibilidade */
+    padding: 15px; 
   }
 
   .about .row-infos {
@@ -1175,7 +1174,7 @@ color: var(--text-black-900);
   .about-title-h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    line-height: 1.2; /* Ajuste da altura da linha para evitar sobreposição */
+    line-height: 1.2;
     text-align: center;
   }
 
@@ -1221,7 +1220,7 @@ color: var(--text-black-900);
   .row .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
-    overflow-x: auto; /* Adiciona barra de rolagem horizontal quando necessário */
+    overflow-x: auto;
     max-width: calc(100% - 30px);
   }
   
@@ -1253,4 +1252,40 @@ color: var(--text-black-900);
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  
+  .section {
+    padding: 0 15px;
+  }
 
+  .profession {
+    font-size: 16px;
+    margin: 40px 0;
+    max-width: calc(100% - 30px); /* Reduz 30px do tamanho máximo da largura */
+    word-wrap: break-word; 
+  }
+  .about-title-h3 {
+    text-align: center;
+  }
+
+  .about-title-h3 span {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .timeline-box {
+    overflow-x: hidden;
+  }
+
+  .timeline-title {
+    font-size: 14px;   
+    width: 100%; 
+    white-space: normal; 
+  }
+
+  .contact-title {
+    font-size: 18px;
+  }
+   
+}
+}
